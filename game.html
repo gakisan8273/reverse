@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="background-color: black; text-align: center;">
+  <canvas id="reversi" width="320" height="320" style="background-color: green" onclick="put(event)"></canvas>
+  <p style="color: #fff" id="turn">白のターン</p>
+  <p style="color: #fff" id="count"></p>
+  <p style="color: #fff" id="win"></p>
+  <script type="text/javascript" src="Game.js"></script>
+  <script type="text/javascript" src="Board.js"></script>
+  <script type="text/javascript" src="Stone.js"></script>
+  <script>
+    const game = new Game();
+    const put = (event) => game.put(event);
+    game.initialize();
+  </script>
+</body>
+</html>
