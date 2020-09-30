@@ -82,8 +82,6 @@ class Game {
         }
       }
     }
-    console.log(canPutPosition);
-    console.log(canPutPosition.flat(2));
     return Boolean(canPutPosition.flat(2).length);
   }
 
