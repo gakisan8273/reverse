@@ -14,7 +14,7 @@ class Game {
   }
 
   // プレイヤーが座標をクリックすると石を置く
-  put(event) {
+  tryPut(event) {
     // マス目[1, 1]から[8, 8]までのどれか
     const putPosition = {
       x: Math.floor((event.offsetX - 40 > 0 ? event.offsetX : 0) / 40) + 1,
